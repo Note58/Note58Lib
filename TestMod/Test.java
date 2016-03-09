@@ -6,10 +6,15 @@ public class Test {
 
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
-		String str = null;
+		String st2 = new String("A");
+		String str ="A";
 		char calc = '\0';
 		int t = 0;
 		int y = 0;
+		 System.out.println(st2 .equals (str));
+		// 비트 전환 연산자 ~
+		// y=~10;
+		// System.out.println(y);
 
 		// int i =0;
 		//

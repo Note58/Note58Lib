@@ -10,7 +10,6 @@ public class Demo5 {
 		String score1 = null;
 		char first = 0;
 		char second = 0;
-		char third = 0;
 		String str = null;
 		Scanner scan = new Scanner(System.in);
 
@@ -20,26 +19,22 @@ public class Demo5 {
 			if (str.length() == 3) { // 3자리 숫자를 받았을때
 				first = str.charAt(0);
 				second = str.charAt(1);
-				third = str.charAt(2);
-			} else if (str.length() == 2) {//2자리 숫자를 받았을때
+			} else if (str.length() == 2) {// 2자리 숫자를 받았을때
 				first = str.charAt(0);
 				second = str.charAt(1);
-				third = 'A';
-			} else if (str.length() == 1) {//1자리 숫자를 받았을때
-				first = str.charAt(0);
-				second = 'A';
-				third = 'A';
 			}
 
 			score = Integer.parseInt(str);
-			if (score > 100){System.out.println("어디서 약을팔아!");continue;}// 100점보다 큰수를 입력할 경우 출력
-			
+			if (score > 100) {
+				System.out.println("어디서 약을팔아!");
+				continue;
+			} // 100점보다 큰수를 입력할 경우 출력
 
 			switch (first) {
 			case '9':
-				if (second == 'A') { //1자리숫자만 받았을때 부터 검사
+				if (second == 'A') { // 1자리숫자만 받았을때 부터 검사
 					score1 = "낙제";
-				} else if (second >= '5') {//2자리 이상 받았을때 + 학점 검사
+				} else if (second >= '5') {// 2자리 이상 받았을때 + 학점 검사
 					score1 = "+A";
 				} else {
 					score1 = "A";
@@ -91,20 +86,24 @@ public class Demo5 {
 				}
 				break;
 			case '1':
-				if (second == 'A') { // 1자리수만 받았을때 검사
-					score1 = "낙제";
-				} else if (third >= 'A') {//2자리수만 받았을때 검사
-					score1 = "F";
-				} else {//100점일 경우 
+				if (score == 100) { // 1자리수만 받았을때 검사
 					score1 = "++A";
+				} else if (second == 'A') {
+					score1 = "낙제";
+				} else {// 100점일 경우
+					score1 = "F";
 				}
 				break;
 			default:
+				score1 = "낙제";
+			}
+			if (str.length() == 1) {
 				score1 = "낙제";
 			}
 			System.out.println(score1 + "학점입니다.");
 		}
 
 	}
+	
 
 }
