@@ -17,6 +17,6 @@ public class DemoA10 {
 		System.out.printf("(int)%fi=%d\n", f2, i4);
 		
 
-	}
+	}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
 
 }
