@@ -10,30 +10,30 @@ public class Test_logic3_increase {
 		i = 10;
 		i=i+++i;
 		//10+11  i++부터 연산 i는 저장후 11이되어 10+11로 출력 
-		System.out.println(i);
+		System.out.println("첫번째      i=i+++i:"+i);
 		
 		i = 10;
 		y=i;
-		i=i++ +y;
+		i=i+++y;
 		//10+10 i++부터 연산 i는 저장후 11이되고 이전값을 반환해 10, y는 10이여서 10+10으로 출력
-		System.out.println(i);
+		System.out.println("두번째     i=i+++y:"+i);
 		
 		i = 10;
 		y=i;
 		i=y+++i;
 		//10+10 y++부터 연산 y는 저장후 11이되고 이전값을 반환해 10, i는 10이여서 10+10으로 출력
-		System.out.println(i);
+		System.out.println("세번째     i=y+++i:"+i);
 		
 		i = 10;
 		i=i+(++i);
 		//10+11 (++i) 부터 연산이되지만 앞에 i에 영향을 주지 않음 10+11을 출력
-		System.out.println(i);
+		System.out.println("네번째   i=i+(++i):"+i);
 		
 		i = 10;
 		y=i;
 		i=i+(++y);
 		//10+11 (++y) 부터 연산되어 10+11을 출력
-		System.out.println(i);
+		System.out.println("다섯번째 i=i+(++y):"+i);
 		
 
 	}
