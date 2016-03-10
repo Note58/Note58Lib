@@ -7,23 +7,19 @@ public class Demo5 {
 	public static void main(String[] args) {
 
 		int score = 0;
-		String score1 = null;
 		char first = 0;
 		char second = 0;
 		String str = null;
+		String score1 = null;
 		Scanner scan = new Scanner(System.in);
 
 		for (int i = 0; i < 5; i++) {
 			System.out.print("점수를 입력하세요 : ");
 			str = scan.nextLine();
-			if (str.length() == 3) { // 3자리 숫자를 받았을때
-				first = str.charAt(0);
-				second = str.charAt(1);
-			} else if (str.length() == 2) {// 2자리 숫자를 받았을때
+			if (str.length() != 1) { 
 				first = str.charAt(0);
 				second = str.charAt(1);
 			}
-
 			score = Integer.parseInt(str);
 			if (score > 100) {
 				System.out.println("어디서 약을팔아!");
@@ -95,7 +91,7 @@ public class Demo5 {
 				}
 				break;
 			default:
-				score1 = "낙제";
+				score1 = "F";
 			}
 			if (str.length() == 1) {
 				score1 = "낙제";

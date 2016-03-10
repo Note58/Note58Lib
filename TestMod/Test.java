@@ -6,12 +6,18 @@ public class Test {
 
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
-		String st2 = new String("A");
-		String str ="A";
+		String str = null;
 		char calc = '\0';
 		int t = 0;
 		int y = 0;
-		 System.out.println(st2 .equals (str));
+		long l = 0;
+		
+		
+		// //문자열 비교
+		// String st2 = new String("A");
+		// str = "A";
+		// System.out.println(st2.equals(str));
+		
 		// 비트 전환 연산자 ~
 		// y=~10;
 		// System.out.println(y);
@@ -20,8 +26,8 @@ public class Test {
 		//
 		// while (i <=15){
 		// i= i+1;
-		// if(i%2 == 0){System.out.println("continue");continue;}//if문 true일때
-		// continue를만나 반복문 시작점으로 돌아간다.
+		// if(i%2 == 0){System.out.println("continue");continue;}
+		// //if문 true일때 continue를만나 반복문 시작점으로 돌아간다.
 		// System.out.println(i);//if문 false일때 실행된다
 		// }
 
