@@ -1,5 +1,5 @@
 package TestMod;
-
+//0310
 public class Test_Mathrandom {
 
 	public static void main(String[] args) {
@@ -20,7 +20,7 @@ public class Test_Mathrandom {
 		}
 		for (int i =1; i<=300;i++){
 			bRandom = Math.random();
-			ex1 = (int)(bRandom*501)+500;
+			ex1 = (int)(bRandom*501)+500;//500~1000사이 랜덤출력 한줄 15개 20줄
 			System.out.print(" " + ex1);
 			if (i%15 ==0){
 				System.out.println(" ");
