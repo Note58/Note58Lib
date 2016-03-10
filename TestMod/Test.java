@@ -11,7 +11,11 @@ public class Test {
 		int t = 0;
 		int y = 0;
 		long l = 0;
-		
+		char c1 =77;
+		char c2 =145;
+		char c3 =68;
+		char c4 =12;
+		System.out.println(""+c1+c2+c3+c4);
 		
 		// //문자열 비교
 		// String st2 = new String("A");

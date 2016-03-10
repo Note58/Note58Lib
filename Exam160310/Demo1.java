@@ -1,7 +1,7 @@
 package Exam160310;
 
 import java.util.Scanner;
-
+//계절예문
 public class Demo1 {
 
 	public static void main(String[] args) {
@@ -9,7 +9,7 @@ public class Demo1 {
 		int t = 0;
 		String str = null;
 		Scanner scan = new Scanner(System.in);
-
+ 
 		//for문
 		for (int i = 0; i < 5; i++) {
 			System.out.print("당신이 원하는 계절을 입력하세요 :");
@@ -30,9 +30,9 @@ public class Demo1 {
 			default:
 				str = "존재하지 않는 계절 ";
 			}
-			System.out.println(str + "입니다");
+			System.out.println(str + "입니다 for");
 		}
-		
+ 
 		//while문
 		while (t < 5) {
 			System.out.print("당신이 원하는 계절을 입력하세요 :");
@@ -53,10 +53,12 @@ public class Demo1 {
 			default:
 				str = "존재하지 않는 계절 ";
 			}
-			System.out.println(str + "입니다");
+			System.out.println(str + "입니다 while");
 			t = ++t;
-
+ 
 		}
+ 
+		//for문 if문
 		for (int i =0; i<5;i++){
 			System.out.print("당신이 원하는 계절을 입력하세요 :");
 			seson = Integer.parseInt(scan.nextLine());
@@ -70,10 +72,10 @@ public class Demo1 {
 				str = "가을";
 			}else {
 				str = "존재하지 않는 계절 ";
-			}System.out.println(str + "입니다");
-			
+			}System.out.println(str + "입니다. for if");
+ 
 		}
-
+ 
 	}
-
+ 
 }

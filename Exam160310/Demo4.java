@@ -1,7 +1,7 @@
 package Exam160310;
 
 import java.util.Scanner;
-
+//가위바위보 예문
 public class Demo4 {
 
 	public static void main(String[] args) {
@@ -19,13 +19,17 @@ public class Demo4 {
 		for(int i =0;i<5;i++){
 			rand = Math.random();
 			com = (int)(rand *3)+1;
-			System.out.println("가위 바위 보!");			
+			System.out.println("가위,바위,보 or 숫자 1,2,3 ");			
 			usr2 = scan.nextLine();
 			chek = usr2.charAt(0);
 			switch (chek){
 			case '가':usr =1;break;
 			case '바':usr =2;break;
 			case '보':usr =3;break;
+			case '1':usr =1;break;
+			case '2':usr =2;break;
+			case '3':usr =3;break;
+			default : System.out.println("제대로 입력해주세요");continue;
 			}
 			sum = usr-com;
 			switch (sum){

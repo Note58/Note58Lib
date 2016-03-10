@@ -15,7 +15,7 @@ public class Demo9 {
 		boolean bl2 = (0.1==0.1f);
 		boolean bl3 = ('A'>'B');
 		boolean bl4 = ('A'+1=='B');
-		System.out.println("bl1:"+bl1 +" bl2:"+bl2+" bl3:"+bl3+" bl4:"+bl4);
+		System.out.println(" bl1:"+bl1 +"\n bl2:"+bl2+"\n bl3:"+bl3+"\n bl4:"+bl4);
 		
 		String str1 ="abc";
 		String str2 = new String ("abc");
